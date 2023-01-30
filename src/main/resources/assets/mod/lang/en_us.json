@@ -1,3 +1,10 @@
 {
-  "item.mod.sapphire": "Sapphire"
+  "item.mod.sapphire": "Sapphire",
+  "item.mod.sapphire_sword": "Sapphire Sword",
+
+  "block.mod.sapphire_block": "Sapphire Block",
+  "block.mod.sapphire_ore": "Sapphire Ore",
+  "block.mod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+
+  "itemgroup.sapphire": "Sapphire Item Group"
 }

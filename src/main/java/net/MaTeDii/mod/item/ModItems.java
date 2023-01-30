@@ -14,6 +14,8 @@ public class ModItems {
 
     public static final Item SAPPHIRE = registerItem("sapphire",
             new Item(new FabricItemSettings()));
+    public static final Item SAPPHIRE_SWORD = registerItem("sapphire_sword",
+            new Item(new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item) {
@@ -22,6 +24,10 @@ public class ModItems {
 
     public static void addItemsToItemGroup() {
         addToItemGroup(ItemGroups.INGREDIENTS, SAPPHIRE);
+        addToItemGroup(ItemGroups.COMBAT, SAPPHIRE_SWORD);
+
+        addToItemGroup(ModItemsGroup.SAPPHIRE, SAPPHIRE);
+        addToItemGroup(ModItemsGroup.SAPPHIRE, SAPPHIRE_SWORD);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
