@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "mod",
+  "version": "${version}",
+
+  "name": "Papiesz Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "MaTeDii"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.MaTeDii.mod.mod"
+    ],
+    "client": [
+      "net.MaTeDii.mod.modClient"
+    ]
+  },
+  "mixins": [
+    "mod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
